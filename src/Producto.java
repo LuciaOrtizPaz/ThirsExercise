@@ -1,9 +1,9 @@
 public abstract class Producto {
-    private String nombre;
-    private String descripcion;
-    private String Categoria;
-    private double precio;
-    private String UrlFoto;
+    protected String nombre;
+    protected String descripcion;
+    protected String Categoria;
+    protected double precio;
+    protected String UrlFoto;
 
     public Producto(String nombre, String descripcion, String Categoria, double precio, String UrlFoto) {
         this.nombre = nombre;
@@ -12,6 +12,7 @@ public abstract class Producto {
         this.precio = precio;
         this.UrlFoto = UrlFoto;
     }
+
     abstract void mostrarDetalles();
     abstract void mostrarPrecio();
 }
